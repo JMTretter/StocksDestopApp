@@ -10,7 +10,7 @@ namespace StocksDestopApp
 {
     class Stocks
     {
-        public static string apiKey = "WbskEzCfUAgcpmpJMApAxrJnsaQPRn9D";
+        public static string apiKey = " ";
         public static List<string> GetDailyOpenClose(string symbol, string date)
         {
             //Call to API 
