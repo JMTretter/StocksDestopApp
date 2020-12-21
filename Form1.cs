@@ -95,8 +95,10 @@ namespace StocksDestopApp
             ListView view = new ListView();
             view.AutoSize = true;
             view.Margin = new Padding(5);
+            view.Scrollable = true;
             view.Width = 340;
-            view.Height = 300;
+            view.Height = 200;
+            
 
             Label labelSymbol = new Label();
             labelSymbol.Text = symbol;
@@ -148,10 +150,44 @@ namespace StocksDestopApp
             view.Controls.Add(exchange);
 
             //Label description = new Label();
-            //description.Text = "Company Description: " + detail[0][6].ToString();
+            //description.Text = "Company Description: " + Environment.NewLine + detail[0][6].ToString();
             //description.Font = new Font("Ariel", 10);
             //description.Location = new Point(10, 155);
+            //description.Dock = new DockStyle();
+            //description.AutoSize = false;
             //view.Controls.Add(description);
+
+            ListView similiarCompany = new ListView(); 
+            similiarCompany.Width = 340;
+            similiarCompany.Height = 200;
+            similiarCompany.Scrollable = true;
+
+
+            Label label = new Label();
+            label.Text = "Similiar Companies";
+            label.Location = new Point(5, 5);
+            label.Font = new Font("Ariel", 10);
+            label.AutoSize = true;
+            similiarCompany.Controls.Add(label);
+
+            Point sPoint = new Point(250, 250);
+            Point lPoint = new Point(5,30);
+            foreach (var s in detail[1])
+            {
+                
+                Label similiar = new Label();
+                similiar.Text = s.ToString();
+                similiar.Font = new Font("Ariel", 10);
+                similiar.Location = lPoint;
+                similiar.AutoSize = true;
+                similiarCompany.Controls.Add(similiar);
+
+                lPoint = new Point(lPoint.X, lPoint.Y + 20);
+
+            }
+            similiarCompany.Location = sPoint;
+            sPoint.Y += similiarCompany.Height + 20;
+            this.Controls.Add(similiarCompany);
 
 
             //set location for listview
@@ -161,5 +197,7 @@ namespace StocksDestopApp
             //adds listview to form
             this.Controls.Add(view);
         }
+
+        
     }
 }

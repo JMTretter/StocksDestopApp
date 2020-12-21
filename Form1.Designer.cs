@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnStockSubmit = new System.Windows.Forms.Button();
-            this.txtBxSymbol = new System.Windows.Forms.TextBox();
-            this.txtBxDate = new System.Windows.Forms.TextBox();
-            this.lblSymbol = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
             this.btnTickerDetail = new System.Windows.Forms.Button();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblSymbol = new System.Windows.Forms.Label();
+            this.txtBxDate = new System.Windows.Forms.TextBox();
+            this.txtBxSymbol = new System.Windows.Forms.TextBox();
+            this.btnStockSubmit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,48 +52,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // btnStockSubmit
-            // 
-            this.btnStockSubmit.Location = new System.Drawing.Point(0, 99);
-            this.btnStockSubmit.Name = "btnStockSubmit";
-            this.btnStockSubmit.Size = new System.Drawing.Size(99, 22);
-            this.btnStockSubmit.TabIndex = 0;
-            this.btnStockSubmit.Text = "Get Open/Close";
-            this.btnStockSubmit.UseVisualStyleBackColor = true;
-            this.btnStockSubmit.Click += new System.EventHandler(this.btnStockSubmit_Click);
-            // 
-            // txtBxSymbol
-            // 
-            this.txtBxSymbol.Location = new System.Drawing.Point(93, 21);
-            this.txtBxSymbol.Name = "txtBxSymbol";
-            this.txtBxSymbol.Size = new System.Drawing.Size(100, 20);
-            this.txtBxSymbol.TabIndex = 1;
-            // 
-            // txtBxDate
-            // 
-            this.txtBxDate.Location = new System.Drawing.Point(94, 57);
-            this.txtBxDate.Name = "txtBxDate";
-            this.txtBxDate.Size = new System.Drawing.Size(100, 20);
-            this.txtBxDate.TabIndex = 2;
-            // 
-            // lblSymbol
-            // 
-            this.lblSymbol.AutoSize = true;
-            this.lblSymbol.Location = new System.Drawing.Point(6, 28);
-            this.lblSymbol.Name = "lblSymbol";
-            this.lblSymbol.Size = new System.Drawing.Size(75, 13);
-            this.lblSymbol.TabIndex = 5;
-            this.lblSymbol.Text = "Stock Symbol:";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(6, 64);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(33, 13);
-            this.lblDate.TabIndex = 6;
-            this.lblDate.Text = "Date:";
-            // 
             // btnTickerDetail
             // 
             this.btnTickerDetail.Location = new System.Drawing.Point(105, 98);
@@ -104,11 +62,53 @@
             this.btnTickerDetail.UseVisualStyleBackColor = true;
             this.btnTickerDetail.Click += new System.EventHandler(this.btnTickerDetail_Click);
             // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(6, 64);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(33, 13);
+            this.lblDate.TabIndex = 6;
+            this.lblDate.Text = "Date:";
+            // 
+            // lblSymbol
+            // 
+            this.lblSymbol.AutoSize = true;
+            this.lblSymbol.Location = new System.Drawing.Point(6, 28);
+            this.lblSymbol.Name = "lblSymbol";
+            this.lblSymbol.Size = new System.Drawing.Size(75, 13);
+            this.lblSymbol.TabIndex = 5;
+            this.lblSymbol.Text = "Stock Symbol:";
+            // 
+            // txtBxDate
+            // 
+            this.txtBxDate.Location = new System.Drawing.Point(94, 57);
+            this.txtBxDate.Name = "txtBxDate";
+            this.txtBxDate.Size = new System.Drawing.Size(100, 20);
+            this.txtBxDate.TabIndex = 2;
+            // 
+            // txtBxSymbol
+            // 
+            this.txtBxSymbol.Location = new System.Drawing.Point(93, 21);
+            this.txtBxSymbol.Name = "txtBxSymbol";
+            this.txtBxSymbol.Size = new System.Drawing.Size(100, 20);
+            this.txtBxSymbol.TabIndex = 1;
+            // 
+            // btnStockSubmit
+            // 
+            this.btnStockSubmit.Location = new System.Drawing.Point(0, 99);
+            this.btnStockSubmit.Name = "btnStockSubmit";
+            this.btnStockSubmit.Size = new System.Drawing.Size(99, 22);
+            this.btnStockSubmit.TabIndex = 0;
+            this.btnStockSubmit.Text = "Get Open/Close";
+            this.btnStockSubmit.UseVisualStyleBackColor = true;
+            this.btnStockSubmit.Click += new System.EventHandler(this.btnStockSubmit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 450);
+            this.ClientSize = new System.Drawing.Size(644, 450);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
