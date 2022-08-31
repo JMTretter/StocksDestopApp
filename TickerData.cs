@@ -40,6 +40,10 @@ namespace StocksDestopApp
             public List<string> tags { get; set; }
             public List<string> similar { get; set; }
             public bool active { get; set; }
+
+            public bool testing { get; set; }
+
+            public string testingcheckouts { get; set; }
         }
 
 
